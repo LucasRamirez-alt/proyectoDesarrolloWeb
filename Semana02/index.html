@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Semana 02</title>
+ </head>
+ <body>
+ <form action="">
+    <label for="input-nombre">Nombre completo</label>
+    <input 
+        type="text"
+        id="input-nombre"
+        placeholder="Ej.Nombre Completo "
+        pattern="[A-Za-z ]+" required>
+ <!-- /*hacer que no me permita escribir numeros*/ -->
+  <!-- este tipo de entrada de datos , no permite escribir numeros, solo letras y espacios.
+  Por que este tipo de entrada es de tipo texto y contiene ninguna restriccion. 
+  la unica validacion que se puede hacer es al hecho de enviar con un pattern. -->
+
+    <br>
+    <label for="input-edad">Edad</label>
+    <input 
+        type="number"
+        id="input-edad"
+        placeholder="Ej. 18"
+        min="1" max="80" required>  
+    <!-- //tenia que tener un maximo y minimo de edad y no tiene que permitir ingresar un mayor cantidad ( 1 y 80 ) -->
+    <br>    
+    <label for="input-pass">Ingrese contraseña</label>
+    <input
+        type="password"
+        id="input-pass"
+        minlength="6" maxlength="12" required>
+    <!-- que no permita menos de 6 y mas de 12 caracteres -->
+    <br>
+    <button type="submit">Enviar</button>
+    <br>
+    <label >Ingrese su genero</label>
+    <br>
+    <input type="radio"
+        id="input-masculino"
+        name="genero"
+    >  
+    <label for="input-masculino">Masculino</label>
+    <br>
+    <input type="radio"
+        id="input-femenino"
+        name="genero">
+        <label for="input-femenino">Femenino</label>
+        <br>
+
+        <h4>
+            Hobbies 
+        </h4>
+        <input type="checkbox" for="leer">
+        <label for="leer">Leer</label>
+        <br>
+        <input type="checkbox" for="hacer-deporte">
+        <label for="hacer-deporte">Hacer Deporte</label>
+        <br>
+        <input type="checkbox" for="bailar">
+        <label for="bailar">Bailar</label>
+        <br>
+        <input type="checkbox" for="correr">
+        <label for="correr">Correr</label>
+        <br>
+        <input type="checkbox" for="viajar">
+        <label for="viajar">Viajar</label>
+        <br>
+        <h4>Ubicación</h4>
+        <label for="dpto">Donde reside?</label>
+        <select  id="dpto">
+            <option selected disabled>
+                seleccione una
+            </option>
+            <option >cambiar paises</option>
+            <option >cambiar paises</option>
+            <option >cambiar paises</option>
+            <option >cambiar paises</option>
+            <option >cambiar paises</option>
+        </select>
+        <br>
+        <h4>Pais</h4>
+        <label for="paises">Elige un navegador</label>
+        <input list="pais" id="paises"/>
+        <datalist id="pais">
+            <option value="paises cambiar">
+            <option value="paises cambiar">
+            <option value="paises cambiar">
+            <option value="paises cambiar">
+            <option value="paises cambiar">
+            <option value="paises cambiar">
+            <option value="paises cambiar">
+        </datalist>
+
+
+ </form>
+ </body>
+</html>
